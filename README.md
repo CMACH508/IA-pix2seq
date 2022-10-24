@@ -84,7 +84,7 @@ python sample.py --data_dir=dataset_path --model_dir=checkpoint_path --output_di
 对于存储于目录`model_dir`下的训练模型，你可以使用`unconditional`模式，基于给定的矢量编码生成简笔画；也可以使用`conditional`模式，输入一张简笔画图片，在模型完成图片识别后，生成相应的简笔画。`num_per_category`表示每一类别下生成的简笔画数量。生成的简笔画以及对应的编码将存储在目录`output_path`下。
 
 # 模型评估
-论文使用的指标**Rec**和**Ret**均来自文献[《Controllable stroke-based sketch synthesis from a self-organized latent space》](https://www.sciencedirect.com/science/article/abs/pii/S0893608021000149)。具体计算代码详见[RPCL-pix2seq]（https://github.com/CMACH508/RPCL-pix2seq）。
+论文使用的指标**Rec**和**Ret**均来自文献[《Controllable stroke-based sketch synthesis from a self-organized latent space》](https://www.sciencedirect.com/science/article/abs/pii/S0893608021000149)。具体计算代码详见[RPCL-pix2seq](https://github.com/CMACH508/RPCL-pix2seq)。
 
 # 引用
 
