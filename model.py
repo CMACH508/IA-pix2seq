@@ -79,7 +79,7 @@ class Model(object):
 
         self.cell = cell
 
-    def build_RPCLVQ(self):
+    def build_IA(self):
         target = tf.reshape(self.output_x, [-1, 5])
         self.x1_data, self.x2_data, self.pen_data = tf.split(target, [1, 1, 3], 1)
 
