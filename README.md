@@ -12,7 +12,7 @@ IA-pix2seq从外向内将简笔画映射为编码，从内向外解码重建或�
 
 <img src="./assets/latent_space.png" width="850" alt="overview"/>
 
-相关论文[《IA-pix2seq：一个实现简笔画可控生成的深度双向学习方法》](http://cjc.ict.ac.cn/online/bfpub/zsc-202237150534.pdf)已被《计算机学报》（ISSN：0254-4164）接收，待见刊。
+相关论文[《IA-pix2seq：一个实现简笔画可控生成的深度双向学习方法》](http://cjc.ict.ac.cn/online/bfpub/zsc-202237150534.pdf)已发表在《计算机学报》（ISSN：0254-4164），具体论文信息详见**引用**。
 
 # 训练IA-pix2seq模型
 
@@ -75,8 +75,6 @@ num_per_category=70000             # Training samples from each category
 
 我们也提供了IA-pix2seq在3个数据集下的[预训练模型](https://jbox.sjtu.edu.cn/l/H1ANQM)。
 
-*Tips: When dealing with a multi-categorized dataset, enlarging the learning rate \eta for latent GMM learning helps accelerate the model selection mechanism.*
-
 # 简笔画生成
 ```
 python sample.py --data_dir=dataset_path --model_dir=checkpoint_path --output_dir=output_path --num_per_category=300 --conditional=True
@@ -87,5 +85,14 @@ python sample.py --data_dir=dataset_path --model_dir=checkpoint_path --output_di
 论文使用的指标**Rec**和**Ret**均来自文献[《Controllable stroke-based sketch synthesis from a self-organized latent space》](https://www.sciencedirect.com/science/article/abs/pii/S0893608021000149)。具体计算代码详见[RPCL-pix2seq](https://github.com/CMACH508/RPCL-pix2seq)。
 
 # 引用
-
-相关论文的引用信息将在未来公布。
+```
+@Article{IA-pix2seq,
+  Title                    = {IA-pix2seq: 一个实现简笔画可控生成的深度双向学习方法},
+  Author                   = {臧思聪, 涂仕奎, 徐雷},
+  Journal                  = {计算机学报},
+  Year                     = {2023},
+  Pages                    = {540-551},
+  Volume                   = {46},
+  Number                   = {3}
+}
+```
