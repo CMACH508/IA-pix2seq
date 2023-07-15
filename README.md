@@ -73,7 +73,7 @@ num_sub=2,                         # Init number of components for each category
 num_per_category=70000             # Training samples from each category
 ```
 
-我们也提供了IA-pix2seq在3个数据集下的[预训练模型](https://jbox.sjtu.edu.cn/l/H1ANQM)。
+我们也提供了IA-pix2seq在3个数据集下的预训练模型：[链接1](https://pan.baidu.com/s/1PuQaKcCo1SVwrBb85eHmtg?pwd=8dmi)或[链接2](https://jbox.sjtu.edu.cn/l/H1ANQM)。
 
 # 简笔画生成
 ```
